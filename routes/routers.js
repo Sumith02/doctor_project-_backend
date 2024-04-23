@@ -8,11 +8,13 @@ const addMedicine = require('../controller/add_medicine');
 const doctorLogin = require('../controller/doctor_login');
 const vendorLogin = require('../controller/vendor_login');
 const viewMedicine = require('../controller/view_medicine');
+const searchQuery = require('../controller/search_query');
 
 router.get("/createdoctordetails", createDoctorLogin);
 router.get("/createvendorreg", createVendorReg);
 router.get("/createmedicinedetails", createMedicineDetails);
 router.get("/viewmedicine", viewMedicine);
+router.post("/searchquery", searchQuery);
 
 router.post("/addmedicine", addMedicine);
 router.post("/vendorreg", registervendor);
