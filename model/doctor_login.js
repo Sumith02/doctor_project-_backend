@@ -6,6 +6,7 @@ module.exports = (req, res, next) => {
             doctor_name VARCHAR(20),
             email_id VARCHAR(20),
             user_name VARCHAR(20),
+            phone BIGINT,
             password VARCHAR(20)
         );
     `;
