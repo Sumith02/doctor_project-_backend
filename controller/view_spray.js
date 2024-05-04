@@ -12,7 +12,7 @@ const formatDate = (dateString) => {
 module.exports = (req, res, next) => {
     const category = req.params.category; // Assuming category is passed as a parameter
 
-    const sql = 'SELECT medicine_id, medicine_name, medicine_category, medicine_company, medicine_description, medicine_category, manufacture_date, expiry_date, quantity, price FROM medicine WHERE medicine_category = "tablets"';
+    const sql = 'SELECT medicine_id, medicine_name, medicine_category, medicine_company, medicine_description, medicine_category, manufacture_date, expiry_date, quantity, price FROM medicine WHERE medicine_category = "Decongestant spray"';
 
     db.query(sql, [category], (error, results, fields) => {
         if (error) {
