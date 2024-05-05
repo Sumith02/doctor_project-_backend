@@ -30,8 +30,8 @@ module.exports = (req, res, next) => {
             medicine_category: result.medicine_category,
             manufacture_date: formatDate(result.manufacture_date),
             expiry_date: formatDate(result.expiry_date),
-            quantity: result.quantity,
             price: result.price,
+            quantity: result.quantity,
         }));
 
         res.json(filteredResults);

@@ -2,7 +2,7 @@ const db = require('../db/db');
 
 module.exports = (req, res, next) => {
     // Count the number of medicines
-    const countSql = 'SELECT COUNT(*) AS totalMedicines FROM medicine ';
+    const countSql = 'SELECT COUNT(*) AS totalMedicines FROM medicine WHERE medicine_category="solution"';
 
     db.query(countSql, (error, countResults, fields) => {
         if (error) {
