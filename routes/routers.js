@@ -18,7 +18,7 @@ const viewSpray = require('../controller/view_spray');
 const viewSolution = require('../controller/view_soloution');
 const searchQuery = require('../controller/search_query');
 const countVendors = require('../controller/count_vendors');
-const countMedicine = require('../controller/count_tablets');
+const countMedicine = require('../controller/count_medicines');
 const viewprofile = require('../controller/viewprofile');
 const CountMedicineithinWeek = require('../controller/count_medicine_within_week');
 const totalAmount = require('../controller/expenditure');
@@ -26,6 +26,7 @@ const totalAmount = require('../controller/expenditure');
 router.get("/createdoctordetails", createDoctorLogin);
 router.get("/createvendorreg", createVendorReg);
 router.get("/createmedicinedetails", createMedicineDetails);
+
 router.get("/viewmedicine", viewMedicine);
 router.get("/viewantisptic", viewAntsipetic);
 router.get("/viewinjection", viewInjection);
@@ -35,6 +36,7 @@ router.get("/viewpills", viewPills);
 router.get("/viewpowder", viewPowder);
 router.get("/viewspray", viewSpray);
 router.get("/viewsolution", viewSolution);
+
 router.get("/totalamt", totalAmount);
 router.get("/vendorcount", countVendors);
 router.get("/medicinecount", countMedicine);
